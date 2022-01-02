@@ -1,2 +1,80 @@
+g<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Optimal : matrimonial</title>
+  <link rel="stylesheet" href="#">
+</head>
+<body>
+    
+    <h1><br><br><br><br><center><fieldset>
+  <!-- contact1 -->
+  <section class="w3l-simple-contact-form1">
+    <div class="contact-form section-gap">
+      <div class="wrapper">
+        <div class="text-center">
+        <h1 style="font-size: 65px; color:red; " >Singup</h1>
+      </div><h1><fieldset>
+        <div class="contact-form" style="max-width: 450px; margin: 0 auto;">
+          <div class="form-mid">
+            <form action="javascript:sendmail()" method="post">
+              <div class="field">
+                <input type="text" class="form-control" name="Name" id="Name" placeholder="Your Name" required="" style="width: 120%; height: 100px; font-size: 65px;"> </div><br>
+              <div class="field">
+                <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email Id"
+                  required="" style=" width: 120%; height:100px; font-size: 65px;"> </div><br>
+              <div class="field">
+                <input type="number" class="form-control" name="Subject" id="Subject" placeholder="M/Fm+Age"
+                  required="" style="width: 120%; height:100px; font-size:65px;"> </div><br>
+              <textarea name="Message" class="form-control" id="Message" placeholder="Wp Mobile Number"
+                required="" rows="2" style="font-size: 120%;"></textarea> <hr></hr>
+              <button type="submit" class="btn btn-contact" style="width: 200px; height:125px; background-color: skyblue; font-size: 100%;">Creat New Id</button></h1></fieldset>
+              <!-- <input type="button" class="btn btn-contact" onclick="sendmail();"  value="Send Message"> -->
+            </form> </div> </div> </div> </div>
+  </section>
+  <!-- /contact1 -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>  
+     function sendmail(){
+			var name = $('#Name').val();
+			var email = $('#Sender').val();
+			var subject = $('#Subject').val();
+      var message = $('#Message').val();
+			// var body = $('#body').val();
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+			//console.log(name, phone, email, message);
 
-coming
+			Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+				To: 'sweetheart2261999@gmail.com',
+				From: "savi@mbox.re",
+				Subject: "New message on contact from "+name,
+				Body: Body	}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting...by..Sourabhalder.');	}
+					else{
+						console.error (message);
+						alert('There is error at sending message. Try Again letter') }	}	);	}
+    </script> </script></fieldset></center></h1>
+ 
+<a href="http://Sourabhalder.rf.gd" class="float" terget=":blank"style="text-decoration:none;">Powerdby~ Sourabhalder</a>
+	<style>.float{ position:fixed; width:60px; height:60px; bottom:46px; right:120px;}</style>
+	
+
+<br/> </fieldset>
+<h1>
+    <a href="fgp.html">forget password </a>|
+    <a href="log.html"> loging</a></fieldset>
+</center></h1>
+  </body>
+</html>
+
